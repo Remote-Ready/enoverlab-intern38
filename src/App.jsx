@@ -1,11 +1,10 @@
-import React, { Component } from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import Home from "./components/Home";
 import Categories from "./components/Categories";
-import Contacts from "./components/Contacts";
 import Cart from "./components/Cart";
-
-import React from "react";
+import Contacts from "./components/Contacts";
+import Resources from "./components/Resources";
+import Header from "./components/Header";
 
 const App = () => {
   return (
@@ -16,6 +15,7 @@ const App = () => {
         <Contacts />
         <Resources />
         <Cart />
+        <Header />
       </div>
     </Router>
   );
