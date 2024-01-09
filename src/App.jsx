@@ -1,23 +1,25 @@
-import { BrowserRouter as Router } from "react-router-dom";
-import Home from "./components/Home";
-import Categories from "./components/Categories";
-import Cart from "./components/Cart";
-import Contacts from "./components/Contacts";
-import Resources from "./components/Resources";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import Categories from "./pages/Categories";
+import Cart from "./pages/Cart";
+import Contacts from "./pages/Contacts";
+import Resources from "./pages/Resources";
 import Header from "./components/Header";
 
 const App = () => {
   return (
-    <Router>
-      <div>
-        <Home />
-        <Categories />
-        <Contacts />
-        <Resources />
-        <Cart />
-        <Header />
-      </div>
-    </Router>
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Header" element={<Header />} />
+          <Route path="/Categories" element={<Categories />} />
+          <Route path="/Contacts" element={<Contacts />} />
+          <Route path="/Cart" element={<Cart />} />
+          <Route path="/Resources" element={<Resources />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 };
 
