@@ -1,4 +1,4 @@
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 import Categories from "./components/Categories";
 import Cart from "./components/Cart";
@@ -9,14 +9,14 @@ import Header from "./components/Header";
 const App = () => {
   return (
     <Router>
-      <div>
-        <Home />
-        <Categories />
-        <Contacts />
-        <Resources />
-        <Cart />
-        <Header />
-      </div>
+     <Routes>
+        <Route path='/' element={ <Home /> } />
+        <Route path='/categories' element={ <Categories /> } />
+        <Route path='/contacts' element={ <Contacts /> } />
+        <Route path='/resources' element={ <Resources /> } />
+        <Route path='/cart' element={ <Cart /> } />
+         {/* <Header /> */}
+      </Routes>
     </Router>
   );
 };
