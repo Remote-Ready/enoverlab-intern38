@@ -4,8 +4,7 @@ import Chair$desk from "../assets/chair$desk.jpg";
 import Books from "../assets/books.jpg";
 import macbook from "../assets/mac.jpg";
 import Tables from "../assets/desks.jpg";
-import Categories from "../components/Category";
-import CategoriesItem from "../components/CategoriesItem";
+import Category from "../components/Category";
 
 const productCategoriesItems = [
   {
@@ -41,10 +40,17 @@ const productCategoriesItems = [
 ];
 const ProductCategories = () => {
   return (
-    <div className=" grid md:grid-cols-3 mt-20 gap-6">
-      {productCategoriesItems.map((item) => (
-        <Categories key={item.id} {...item} />
-      ))}
+    <div>
+      <div className="flex justify-between flex-grow gap-1 mt-8">
+        <h1 className="text-2xl text-[#232323]">Product Categories</h1>
+        <button className=" text-[#3A0CA3]">See More</button>
+      </div>
+
+      <div className=" grid sm:grid-cols-2 md:grid-cols-3 mt-20 gap-6">
+        {productCategoriesItems.map((item) => (
+          <Category key={item.id} {...item} />
+        ))}
+      </div>
     </div>
   );
 };

@@ -1,7 +1,6 @@
+import Product from "./Product";
 import WorkStation from "../assets/workstation.jpeg";
 import laptop from "../assets/laptop.jpg";
-import Products from "./Product";
-import TopSellingItems from "./TopSellingItems";
 
 const bestSellingItems = [
   {
@@ -25,15 +24,18 @@ const bestSellingItems = [
   },
 ];
 
-const BestSelling = () => {
+const TopSellingItems = ({ className }) => {
   return (
-    <div>
-      <TopSellingItems />
-      {bestSellingItems.map((item) => (
-        <Products key={item.id} {...item} />
-      ))}
+    <div className={className}>
+      <h1 className="text-[#232323] text-2xl">Top Selling Items.</h1>
+
+      <div className="grid sm:grid-cols-2 md:grid-cols-3 mt-10 gap-7">
+        {bestSellingItems.map((item) => (
+          <Product key={item.id} {...item} />
+        ))}
+      </div>
     </div>
   );
 };
 
-export default BestSelling;
+export default TopSellingItems;

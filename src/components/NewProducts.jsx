@@ -1,7 +1,7 @@
 import Headset from "../assets/headset.jpg";
 import Phone from "../assets/mobile.jpg";
 import Chair$desk from "../assets/chair$desk.jpg";
-import Product from "../components/Product";
+import ProductCategory from "./ProductCategory";
 
 const newProductsItems = [
   {
@@ -24,7 +24,7 @@ const NewProducts = () => {
   return (
     <div className=" grid md:grid-cols-3 mt-20 gap-6">
       {newProductsItems.map((item) => (
-        <Product key={item.id} {...item} />
+        <ProductCategory key={item.id} {...item} />
       ))}
     </div>
   );

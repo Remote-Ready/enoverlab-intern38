@@ -1,4 +1,4 @@
-const Category = ({ name, image }) => {
+const ProductCategory = ({ name, image }) => {
   return (
     <div>
       <img src={image} alt="" className=" hover:scale-105 duration-300" />
@@ -7,4 +7,4 @@ const Category = ({ name, image }) => {
   );
 };
 
-export default Category;
+export default ProductCategory;
