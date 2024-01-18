@@ -4,24 +4,20 @@ import Categories from "./pages/Categories";
 import Cart from "./pages/Cart";
 import Contacts from "./pages/Contacts";
 import Resources from "./pages/Resources";
-import Header from "./components/Header";
 import CartContextProvider from "./contexts/CartProvider";
 
 const App = () => {
   return (
     <CartContextProvider>
-      <div>
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/Header" element={<Header />} />
-            <Route path="/Categories" element={<Categories />} />
-            <Route path="/Contacts" element={<Contacts />} />
-            <Route path="/Cart" element={<Cart />} />
-            <Route path="/Resources" element={<Resources />} />
-          </Routes>
-        </BrowserRouter>
-      </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/categories" element={<Categories />} />
+          <Route path="/contacts" element={<Contacts />} />
+          <Route path="/resources" element={<Resources />} />
+          <Route path="/cart" element={<Cart />} />
+        </Routes>
+      </BrowserRouter>
     </CartContextProvider>
   );
 };
