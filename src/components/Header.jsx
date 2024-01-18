@@ -36,13 +36,14 @@ const Header = () => {
         RemoteReady
       </h2>
       <ul className="hidden md:flex ml-auto">
-        {links.map(({ id, title }) => (
+        {links.map(({ id, title, to }) => (
           <li key={id} className="px-4 cursor-pointer py-6 font-medium">
-            {title}
+            <a href={to}>{title}</a>
           </li>
         ))}
         <li className="px-4 cursor-pointer py-6 font-medium relative">
-          Cart
+          <a href="/cart">Cart</a>
+
           {numberInCart > 0 && (
             <span className="bg-red-600 text-white w-5 h-5 rounded-full grid place-content-center text-xs absolute top-4 right-0">
               {numberInCart}
@@ -59,11 +60,20 @@ const Header = () => {
       {nav && (
         <ul className="flex md:hidden flex-col justify-center items-center absolute top-0 left-0 h-screen w-full bg-white">
           {" "}
-          {links.map(({ id, title }) => (
+          {links.map(({ id, title, to }) => (
             <li key={id} className="cursor-pointer py-6 text-xl font-medium">
-              {title}
+              <a href={to}>{title}</a>
             </li>
           ))}
+          <li className="px-4 cursor-pointer py-6 font-medium relative">
+            <a href="/cart">Cart</a>
+
+            {numberInCart > 0 && (
+              <span className="bg-red-600 text-white w-5 h-5 rounded-full grid place-content-center text-xs absolute top-4 right-0">
+                {numberInCart}
+              </span>
+            )}
+          </li>
         </ul>
       )}
     </div>
