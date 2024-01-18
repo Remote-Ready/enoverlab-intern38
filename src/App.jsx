@@ -1,23 +1,24 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./components/Home";
-import Categories from "./components/Categories";
-import Cart from "./components/Cart";
-import Contacts from "./components/Contacts";
-import Resources from "./components/Resources";
-import Header from "./components/Header";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import Categories from "./pages/Categories";
+import Cart from "./pages/Cart";
+import Contacts from "./pages/Contacts";
+import Resources from "./pages/Resources";
+import CartContextProvider from "./contexts/CartProvider";
 
 const App = () => {
   return (
-    <Router>
-     <Routes>
-        <Route path='/' element={ <Home /> } />
-        <Route path='/categories' element={ <Categories /> } />
-        <Route path='/contacts' element={ <Contacts /> } />
-        <Route path='/resources' element={ <Resources /> } />
-        <Route path='/cart' element={ <Cart /> } />
-         {/* <Header /> */}
-      </Routes>
-    </Router>
+    <CartContextProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/categories" element={<Categories />} />
+          <Route path="/contacts" element={<Contacts />} />
+          <Route path="/resources" element={<Resources />} />
+          <Route path="/cart" element={<Cart />} />
+        </Routes>
+      </BrowserRouter>
+    </CartContextProvider>
   );
 };
 
