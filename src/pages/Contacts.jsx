@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 export default function Contacts() {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <div className="container flex flex-col py-4 justify-center max-w-screen-lg mx-auto h-full">
         <h2 className="text-2xl font-bold text-[#3A0CA3]">Get In Touch</h2>
         <p className="py-6 text-[#8D55EF] font-sans ">
@@ -46,7 +46,7 @@ export default function Contacts() {
             <h2 className="lg:text-2xl text-3x1 md:mb-0 mb-6 lg:leading-normal font-semibold md:w-2/5 "></h2>
           </div>
         </div>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </>
   );
