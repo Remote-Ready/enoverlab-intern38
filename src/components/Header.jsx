@@ -1,12 +1,14 @@
 import { useContext, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { CartContext } from "../contexts/CartProvider";
+import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const links = [
   {
     id: 1,
     title: "Home",
-    to: "/Home",
+    to: "/", //removed "/home" and used "/"
   },
   {
     id: 2,
@@ -26,6 +28,7 @@ const links = [
 ];
 
 const Header = () => {
+  const cartItems = useSelector((state) => state.cart.items);
   const [nav, setNavBar] = useState(false);
   const { cart } = useContext(CartContext);
   const numberInCart = cart.length;
@@ -35,6 +38,15 @@ const Header = () => {
       <h2 className="flex justify-between items-center h-20 text-blue-700 text-2xl font-bold">
         RemoteReady
       </h2>
+
+     {/* Added a cart display bewteen the logo and menu icon  */}
+      <Link to='/cart'>
+        Cart {" "}
+        <sup>
+         {cartItems.length}
+        </sup> 
+      </Link>
+
       <ul className="hidden md:flex ml-auto">
         {links.map(({ id, title, to }) => (
           <li key={id} className="px-4 cursor-pointer py-6 font-medium">

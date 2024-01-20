@@ -4,7 +4,7 @@ import Header from "../components/Header";
 export default function Resources() {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <div className=" text-[#636262] text-sm container">
         <h3 className="text-[#232323] text-md font-semibold mt-8 gap-1">
           Agreement
@@ -70,7 +70,7 @@ export default function Resources() {
         <button className="text-white bg-[#3A0CA3] px-4 py-2 rounded-sm">
           I agree with terms
         </button>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </>
   );

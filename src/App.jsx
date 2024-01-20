@@ -6,10 +6,15 @@ import Contacts from "./pages/Contacts";
 import Resources from "./pages/Resources";
 import CartContextProvider from "./contexts/CartProvider";
 
+import './App.css'
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+
 const App = () => {
   return (
     <CartContextProvider>
       <BrowserRouter>
+      <Header/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/categories" element={<Categories />} />
@@ -17,6 +22,7 @@ const App = () => {
           <Route path="/resources" element={<Resources />} />
           <Route path="/cart" element={<Cart />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </CartContextProvider>
   );
