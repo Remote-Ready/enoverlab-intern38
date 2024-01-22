@@ -32,6 +32,7 @@ const Header = () => {
   const [nav, setNavBar] = useState(false);
   const { cart } = useContext(CartContext);
   const numberInCart = cart.length;
+  const close = () => setNavBar(false)
 
   return (
     <div className="container flex gap-4 justify-between items-center h-20 sticky top-0 bg-white">
@@ -71,11 +72,11 @@ const Header = () => {
           {" "}
           {links.map(({ id, title, to }) => (
             <li key={id} className="cursor-pointer py-6 text-xl font-medium">
-              <Link to={to}>{title}</Link>
+              <Link to={to} onClick={close}>{title}</Link>
             </li>
           ))}
           <li className="px-4 cursor-pointer py-6 font-medium relative">
-            <Link to="/cart">Cart</Link>
+            <Link to="/cart" onClick={close}>Cart</Link>
 
             {numberInCart > 0 && (
               <span className="bg-red-600 text-white w-5 h-5 rounded-full grid place-content-center text-xs absolute top-4 right-0">
