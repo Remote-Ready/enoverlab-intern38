@@ -35,26 +35,23 @@ const Header = () => {
 
   return (
     <div className="container flex gap-4 justify-between items-center h-20 sticky top-0 bg-white">
-      <h2 className="flex justify-between items-center h-20 text-blue-700 text-2xl font-bold">
+      <h2 className="flex justify-between items-center h-20 text-blue-700 text-2xl font-bold hover:scale-105 duration-300">
         RemoteReady
       </h2>
 
-     {/* Added a cart display bewteen the logo and menu icon  */}
-      <Link to='/cart'>
-        Cart {" "}
-        <sup>
-         {cartItems.length}
-        </sup> 
+      {/* Added a cart display bewteen the logo and menu icon  */}
+      <Link to="/cart">
+        Cart <sup>{cartItems.length}</sup>
       </Link>
 
       <ul className="hidden md:flex ml-auto">
         {links.map(({ id, title, to }) => (
           <li key={id} className="px-4 cursor-pointer py-6 font-medium">
-            <a href={to}>{title}</a>
+            <Link to={to}>{title}</Link>
           </li>
         ))}
         <li className="px-4 cursor-pointer py-6 font-medium relative">
-          <a href="/cart">Cart</a>
+          <Link to="/cart">Cart</Link>
 
           {numberInCart > 0 && (
             <span className="bg-red-600 text-white w-5 h-5 rounded-full grid place-content-center text-xs absolute top-4 right-0">
@@ -74,11 +71,11 @@ const Header = () => {
           {" "}
           {links.map(({ id, title, to }) => (
             <li key={id} className="cursor-pointer py-6 text-xl font-medium">
-              <a href={to}>{title}</a>
+              <Link to={to}>{title}</Link>
             </li>
           ))}
           <li className="px-4 cursor-pointer py-6 font-medium relative">
-            <a href="/cart">Cart</a>
+            <Link to="/cart">Cart</Link>
 
             {numberInCart > 0 && (
               <span className="bg-red-600 text-white w-5 h-5 rounded-full grid place-content-center text-xs absolute top-4 right-0">
