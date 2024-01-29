@@ -168,6 +168,7 @@ select{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     font-size: 12px;
+    margin-left: 0;
  }
 
  .filter{
@@ -179,4 +180,19 @@ select{
     font-size: 9px;
     width: 100%;
   }
+}
+
+
+@media screen and (max-width: 450px) {
+    .select-option h4{
+        font-size: 12px;
+        margin-right: 10px;
+    }
+    .cat-col-1 h5{
+        font-size: 13px;
+    }
+
+    .cat-col-1 p{
+        font-size: 11px;
+    }
 }
