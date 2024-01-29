@@ -181,7 +181,7 @@ select{
   }
 }
 
-@media screen and (max-width: 515px) {
+/* @media screen and (max-width: 515px) {
  select{
     font-size: 10px;
 }
@@ -189,7 +189,7 @@ select{
 .item-btn button{
     font-size: 9px;
   }
-}
+} */
 
 
 /* @media screen and (max-width: 430px) {  

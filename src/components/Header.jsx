@@ -1,5 +1,6 @@
 import { useContext, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { BiSolidCartAdd } from 'react-icons/bi'
 import { CartContext } from "../contexts/CartProvider";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
@@ -41,8 +42,9 @@ const Header = () => {
       </h2>
 
       {/* Added a cart display bewteen the logo and menu icon  */}
-      <Link to="/cart">
-        Cart <sup>{cartItems.length}</sup>
+      <Link to="/cart" className="flex text-2xl">
+      <BiSolidCartAdd /> 
+      <sup>{cartItems.length}</sup>
       </Link>
 
       <ul className="hidden md:flex ml-auto">
