@@ -1,10 +1,11 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import cart from '../assets/cart.png'
 import { Link } from 'react-router-dom';
 import { addToCart, removeFromCart } from '../components/CartSlice';
 
 import '../components/css/Cart.css'
+import { BiSolidCartAdd } from 'react-icons/bi';
+import { MdKeyboardArrowLeft } from 'react-icons/md'
 
 const Cart = ({ onClick }) => {
   const cartItems = useSelector((state) => state.cart.items);
@@ -26,7 +27,7 @@ const Cart = ({ onClick }) => {
     <div>
      <Link to='/categories'>
        <button onClick={onClick} className="cart-button">
-         continue shopping
+        	&lt; continue shopping
        </button>
      </Link>
       
@@ -36,7 +37,7 @@ const Cart = ({ onClick }) => {
         <div className="cart-length">
             <h4>Cart ({cartItems.length})</h4>
             <div>
-                <img src={cart} alt="" />
+              <BiSolidCartAdd size={100} className='text-purple-800 bg-white rounded-full m-auto ' />
                 {cartItems.length == 0 && <p>Your cart is empty</p> }
                 <p>Explore our gadgets from the category section</p>
                 <button>Shop more</button>

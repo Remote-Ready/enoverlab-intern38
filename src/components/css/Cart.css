@@ -9,6 +9,11 @@
     padding: 10px 5px;
     border-radius: 5px;
   }
+
+  .cart-button button{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
   
   .cart-content{
     display: flex;
@@ -218,7 +223,7 @@
   
   @media screen and (max-width: 450px) {
     .cart-button{
-      width: 35%;
+      width: 55%;
     }
   
     .cart-content{
