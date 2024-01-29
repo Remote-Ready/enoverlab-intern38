@@ -41,7 +41,7 @@ export const items = [
       name: 'Mac IOS Laptop', 
       price: 30000,
       color: 'red', 
-      vendor: 'hp', 
+      vendor: 'toshiba', 
       category: 'A', 
       quality: 'high', 
       image: apple1
@@ -50,7 +50,7 @@ export const items = [
       name: 'Dell Laptop', 
       price: 30000,
       color: 'blue', 
-      vendor: 'apple', 
+      vendor: 'toshiba', 
       category: 'B', 
       quality: 'medium', 
       image: apple2
@@ -77,7 +77,7 @@ export const items = [
       name: 'Dell Dual Monitor Stand', 
       price: 60000,
       color: 'red', 
-      vendor: 'hp', 
+      vendor: 'toshiba', 
       category: 'A', 
       quality: 'high', 
       image: monitor1
@@ -95,7 +95,7 @@ export const items = [
       name: 'Monitor Andrid', 
       price: 60000, 
       color: 'yellow', 
-      vendor: 'tecno', 
+      vendor: 'toshiba', 
       category: 'C', 
       quality: 'low', 
       image: monitor3
@@ -113,7 +113,7 @@ export const items = [
       name: 'Mesh Office Chair', 
       price: 60000,
       color: 'red', 
-      vendor: 'hp', 
+      vendor: 'toshiba', 
       category: 'A', 
       quality: 'high', 
       image: chair1
@@ -158,7 +158,7 @@ export const items = [
       name: 'Gaming PC', 
       price: 55000,
       color: 'blue', 
-      vendor: 'apple', 
+      vendor: 'toshiba', 
       category: 'B', 
       quality: 'medium', 
       image: acc2

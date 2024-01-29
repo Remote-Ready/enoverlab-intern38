@@ -53,15 +53,7 @@ function Categories() {
   };
 
   return (
-     <>
      <div className="Categories">
-      {/* <Link to='/cart'>
-        Cart {" "}
-        <sup>
-         {cartItems.length}
-        </sup> 
-      </Link> */}
-
       <div className="cat-header">
         <div className="cat-col-1">
           <h5>Browse Category</h5>
@@ -102,7 +94,6 @@ function Categories() {
             <option value="blue">Blue</option>
             <option value="green">Green</option>
             <option value="yellow">Yellow</option>
-           {/* Add more color options as required */}
            </select>
           
            <select
@@ -114,7 +105,6 @@ function Categories() {
             <option value="toshiba">Toshiba</option>
             <option value="apple">Apple</option>
             <option value="tecno">Tecno</option>
-           {/* Add more color options as required */}
            </select>
 
           <select
@@ -125,7 +115,6 @@ function Categories() {
           <option value="A">Category A</option>
           <option value="B">Category B</option>
           <option value="C">Category C</option>
-          {/* Add more category options as required */}
          </select>
 
           <select
@@ -136,7 +125,6 @@ function Categories() {
           <option value="high">High</option>
           <option value="medium">Medium</option>
           <option value="low">Low</option>
-          {/* Add more quality options as required */}
          </select>
          </div>
          </div>
@@ -154,32 +142,9 @@ function Categories() {
           </div>
         ))}
       </div>
-          </div>
-
-            {/* <h2>Product List</h2>
-            <ul className='carts'>
-              {items.map((item) => (
-                <li key={item.id}>
-                  <div className='list'>
-                  <img src={item.image} alt="img" />
-                  {item.name} - ${item.price}
-                  <button onClick={() => handleAddToCart(item)}>Add to Cart</button>
-                  <button onClick={() => handleRemoveFromCart(item)}>Remove from Cart</button>
-                  </div>
-                </li>
-              ))}
-            </ul> */}
-          </div>
-        {/* ) : ( */}
-          {/* <div>
-            <button onClick={handleBackToCartClick} className="cart-button">
-              Back to Cart
-            </button>
-            <CartPage />
-          </div>
-        )} */}
-      </div>
-     </>
+     </div>
+    </div>
+   </div>
   )
 }
 

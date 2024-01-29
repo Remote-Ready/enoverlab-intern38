@@ -180,22 +180,3 @@ select{
     width: 100%;
   }
 }
-
-/* @media screen and (max-width: 515px) {
- select{
-    font-size: 10px;
-}
-
-.item-btn button{
-    font-size: 9px;
-  }
-} */
-
-
-/* @media screen and (max-width: 430px) {  
-  .filters{
-    grid-template-columns: 1fr;
-    width: 80%;
-    margin: auto;
-  }
-} */
