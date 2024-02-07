@@ -83,7 +83,7 @@ select{
   
 .filters{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
   
 .filter{
@@ -96,7 +96,7 @@ select{
 }
 
 .filter img{
-    width: 100%;
+    width: 70%;
     height: 50%;
     margin: auto;
 }
