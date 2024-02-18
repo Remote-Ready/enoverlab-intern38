@@ -15,9 +15,11 @@ const Hero = () => {
           functionality . Browse our collection today and transform he way you.
           work
         </p>
-        <button className="bg-[#3A0CA3] text-white font-light py-2 px-8 rounded-md">
-          Shop Now
-        </button>
+        <a href="/Categories">
+          <button className="bg-[#3A0CA3] text-white font-light py-2 px-8 rounded-md">
+            Shop Now
+          </button>
+        </a>
       </div>
       <img
         src={chair}
