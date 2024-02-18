@@ -13,7 +13,7 @@ const links = [
   },
   {
     id: 2,
-    title: "categories",
+    title: "Categories",
     to: "/Categories",
   },
   {
@@ -30,7 +30,7 @@ const links = [
 
 const Header = () => {
   const cartItems = useSelector((state) => state.cart.items);
-  const [nav, setNavBar] = useState(false);
+  const [navbar, setNavBar] = useState(false);
   const { cart } = useContext(CartContext);
   const numberInCart = cart.length;
   const close = () => setNavBar(false)
@@ -64,12 +64,12 @@ const Header = () => {
         </li>
       </ul>
       <div
-        onClick={() => setNavBar(!nav)}
+        onClick={() => setNavBar(!navbar)}
         className="cursor-pointer z-10 md:hidden"
       >
-        {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
+        {navbar ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>
-      {nav && (
+      {navbar && (
         <ul className="flex md:hidden flex-col justify-center items-center absolute top-0 left-0 h-screen w-full bg-white">
           {" "}
           {links.map(({ id, title, to }) => (
