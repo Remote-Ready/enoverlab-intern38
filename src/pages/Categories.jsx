@@ -8,7 +8,7 @@ import { items } from "../components/Data";
 import "../components/css/Categories.css";
 
 function Categories() {
-  const cartItems = useSelector((state) => state.cart.items);
+  // const cartItems = useSelector((state) => state.cart.items);
 
   const dispatch = useDispatch();
 

@@ -83,7 +83,7 @@ select{
   
 .filters{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
   
 .filter{
@@ -96,7 +96,7 @@ select{
 }
 
 .filter img{
-    width: 100%;
+    width: 70%;
     height: 50%;
     margin: auto;
 }
@@ -129,19 +129,19 @@ select{
 
 
 @media screen and (max-width: 800px) {  
-    .filters{
-      grid-template-columns: 1fr 1fr;
-    }
-  }
+ .filters{
+    grid-template-columns: 1fr 1fr;
+   }
+}
 
 
 @media screen and (max-width: 725px) {
-  .content input{
-    width: 70%;
-    margin-bottom: 5px;
-  }
+ .content input{
+   width: 70%;
+   margin-bottom: 5px;
+}
   
-  .select-option{
+ .select-option{
     width: 100%;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -149,25 +149,50 @@ select{
 }
 
 
-@media screen and (max-width: 515px) {
-    select{
-        font-size: 10px;
-    }
+@media screen and (max-width: 545px) {
+.cat-col-1{
+    margin-right: 5px;
+}
+    
+.cat-col-1 h5{
+    font-weight: bold;
+    margin-bottom: 5px;
+ }
+    
+.cat-col-2{
+   width: 80%;
+ }
 
-    .item-btn{
-        display: flex;
-    }
+ .select-option{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    font-size: 12px;
+    margin-left: 0;
+ }
 
-    .item-btn button{
-        font-size: 9px;
-    }
+ .filter{
+    height: 250px;
+    padding: 30px 15px;
+ }
+
+ .item-btn button{
+    font-size: 9px;
+    width: 100%;
   }
+}
 
 
-@media screen and (max-width: 430px) {  
-  .filters{
-    grid-template-columns: 1fr;
-    width: 80%;
-    margin: auto;
-  }
+@media screen and (max-width: 450px) {
+    .select-option h4{
+        font-size: 12px;
+        margin-right: 10px;
+    }
+    .cat-col-1 h5{
+        font-size: 13px;
+    }
+
+    .cat-col-1 p{
+        font-size: 11px;
+    }
 }
