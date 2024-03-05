@@ -2,7 +2,7 @@
 import Hero from "../components/Hero";
 import ProductCategories from "../components/ProductCategories";
 import NewProducts from "../components/NewProducts";
-import Footer from "../components/Footer";
+//import Footer from "../components/Footer";
 import TopSellingItems from "../components/TopSellingItems";
 
 const Home = () => {

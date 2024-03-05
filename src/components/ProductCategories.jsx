@@ -1,6 +1,6 @@
 import Headset from "../assets/headset.jpg";
 import Phone from "../assets/mobile.jpg";
-import Chair$desk from "../assets/chair$desk.jpg";
+import Chair$desk from "../assets/online-school-equipment-home.png";
 import Books from "../assets/books.jpg";
 import macbook from "../assets/mac.jpg";
 import Tables from "../assets/desks.jpg";
