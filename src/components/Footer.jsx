@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div className="grid sm:grid-cols-3 gap-8 font-thin text-[#232323] py-20">
+    <div className=" container grid sm:grid-cols-3 gap-8 font-thin text-[#232323] py-20">
       <div>
         <h5 className="text-xl text-[#3A0CA3] font-bold mb-4">Brands</h5>
         <ul className="text-sm mb-2">Dell</ul>

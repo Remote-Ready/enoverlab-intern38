@@ -1,13 +1,14 @@
 import Product from "./Product";
-import WorkStation from "../assets/workstation.jpeg";
+import stand from "../assets/stand.png";
 import laptop from "../assets/laptop.jpg";
+import comfy from "../assets/comfy.png";
 
 const bestSellingItems = [
   {
     id: "1",
     name: "Exquisite Work Chair",
     price: 30000,
-    image: WorkStation,
+    image: comfy,
   },
 
   {
@@ -20,7 +21,7 @@ const bestSellingItems = [
     id: "3",
     name: "Work Table",
     price: 150000,
-    image: WorkStation,
+    image: stand,
   },
 ];
 

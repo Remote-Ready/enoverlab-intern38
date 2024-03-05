@@ -1,5 +1,5 @@
 import { redirect } from "react-router";
-import chair from "../assets/chair.jpeg";
+import office from "../assets/officepl.png";
 
 const Hero = () => {
   return (
@@ -22,7 +22,7 @@ const Hero = () => {
         </a>
       </div>
       <img
-        src={chair}
+        src={office}
         alt=""
         className="border-solid basis-[624px] flex-grow rounded-lg"
       />
