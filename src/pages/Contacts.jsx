@@ -1,6 +1,7 @@
 import pixel from "../assets/pexels-cottonbro-studio-7438107.png";
 import { FaArrowRightLong } from "react-icons/fa6";
 import station from "../assets/Workstation-space-where-a-freelancer-sit-to-work.png";
+import Testimonial from "../components/Testimonial";
 
 export default function Contacts() {
   return (
@@ -21,7 +22,7 @@ export default function Contacts() {
         </div>
         <img src={pixel} alt="" />
       </div>
-      <div className="container flex flex-wrap lg:flex-nowrap gap-8 items-center justify-center py-10">
+      <div className="flex flex-wrap lg:flex-nowrap gap-8 items-center justify-center py-10">
         <div className="container flex">
           <img src={station} alt="" />
           <div className="mt-8 py-12">
@@ -35,6 +36,7 @@ export default function Contacts() {
           </div>
         </div>
       </div>
+      <Testimonial />
       <div className="container flex flex-col py-4 justify-center max-w-screen-lg mx-auto h-full">
         <h2 className="text-2xl font-bold text-[#3A0CA3]">Get In Touch</h2>
         <p className="py-6 text-[#8D55EF] font-sans ">
