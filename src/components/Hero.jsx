@@ -3,7 +3,7 @@ import office from "../assets/officepl.png";
 
 const Hero = () => {
   return (
-    <div className="flex flex-wrap lg:flex-nowrap gap-8 items-center justify-center py-10">
+    <div className="container flex flex-wrap lg:flex-nowrap gap-8 items-center justify-center py-10">
       <div className="basis-[552px] flex-grow">
         <h2 className="justify-center font-extrabold text-4xl text-[#232323]">
           Unleash the power of{" "}

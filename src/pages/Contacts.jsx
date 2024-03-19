@@ -1,10 +1,40 @@
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import pixel from "../assets/pexels-cottonbro-studio-7438107.png";
+import { FaArrowRightLong } from "react-icons/fa6";
+import station from "../assets/Workstation-space-where-a-freelancer-sit-to-work.png";
 
 export default function Contacts() {
   return (
     <>
       {/* <Header /> */}
+      <div className="container flex flex-wrap lg:flex-nowrap gap-8 items-center justify-center py-10">
+        <div className="basis-[552px] flex-grow">
+          <h2 className="text-3xl text-[#3A0CA3]">About Us</h2>
+          <p className="text-[#222222] text-sm font-light">
+            At RemoteReady, we specialize in providing high-quality workstations
+            for individuals who work from home and also deals in selling and
+            buying of workstation gadgets.
+          </p>
+          <button className="flex gap-2 text-white font-thin text-center items-center bg-[#3A0CA3] mt-6 py-2 px-4 rounded-lg">
+            Read More
+            <FaArrowRightLong className="mt-1" />
+          </button>
+        </div>
+        <img src={pixel} alt="" />
+      </div>
+      <div className="container flex flex-wrap lg:flex-nowrap gap-8 items-center justify-center py-10">
+        <div className="container flex">
+          <img src={station} alt="" />
+          <div className="mt-8 py-12">
+            <h1 className="text-[#3A0CA3] text-3xl">Our Services</h1>
+            <p className="text-[#222222] text-sm">We serve you the right way</p>
+            <div className="mt-8 text-[#222222] font-light text-sm">
+              <h3 className="mb-8">We sell gadgets</h3>
+              <h3 className="mb-8">We rent out workspaces</h3>
+              <h3>24/7 customer support</h3>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="container flex flex-col py-4 justify-center max-w-screen-lg mx-auto h-full">
         <h2 className="text-2xl font-bold text-[#3A0CA3]">Get In Touch</h2>
         <p className="py-6 text-[#8D55EF] font-sans ">

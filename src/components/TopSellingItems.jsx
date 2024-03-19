@@ -28,9 +28,11 @@ const bestSellingItems = [
 const TopSellingItems = ({ className }) => {
   return (
     <div className={className}>
-      <h1 className="text-[#232323] text-2xl">Top Selling Items.</h1>
+      <h1 className="container text-[#232323] text-2xl mb-4">
+        Top Selling Items.
+      </h1>
 
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 mt-10 gap-7">
+      <div className="container grid sm:grid-cols-2 md:grid-cols-3 mt-10 gap-7">
         {bestSellingItems.map((item) => (
           <Product key={item.id} {...item} />
         ))}
