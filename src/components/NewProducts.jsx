@@ -22,7 +22,7 @@ const newProductsItems = [
 ];
 const NewProducts = () => {
   return (
-    <div className=" grid md:grid-cols-3 mt-20 gap-6">
+    <div className="grid md:grid-cols-3 mt-20 gap-6">
       {newProductsItems.map((item) => (
         <ProductCategory key={item.id} {...item} />
       ))}

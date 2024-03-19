@@ -4,13 +4,15 @@ import ProductCategories from "../components/ProductCategories";
 import NewProducts from "../components/NewProducts";
 //import Footer from "../components/Footer";
 import TopSellingItems from "../components/TopSellingItems";
+import Vid from "../components/Vid";
 
 const Home = () => {
   return (
     <div>
       {/* <Header /> */}
-      <div className="container">
+      <div className="">
         <Hero />
+        <Vid />
         <TopSellingItems className="mt-20" />
         <ProductCategories />
         <NewProducts />
