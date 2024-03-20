@@ -10,7 +10,7 @@ const Testimonial = () => {
           Testimonials
         </h1>
         <div className="grid md:grid-cols-2 gap-4">
-          <div className="border border-solid-[#3A0CA3] rounded-md">
+          <div className="border border-[#3A0CA3] rounded-md">
             <p className="text-2xl mt-4 mb-8 flex items-center font-thin justify-center">
               Customer Service is the best at RemoteReady
             </p>
@@ -22,7 +22,7 @@ const Testimonial = () => {
               </div>
             </div>
           </div>
-          <div className="border border-solid-[#3A0CA3] rounded-md">
+          <div className="border border-[#3A0CA3] rounded-md">
             <p className="text-2xl mt-4 mb-8 flex items-center font-thin justify-center">
               Their gadgets are of high quality and standard
             </p>
@@ -34,7 +34,7 @@ const Testimonial = () => {
               </div>
             </div>
           </div>
-          <div className="border border-solid-[#3A0CA3] rounded-md">
+          <div className="border border-[#3A0CA3] rounded-md">
             <p className="text-2xl mt-4 mb-8 flex items-center font-thin justify-center">
               Best gadget for everyone
             </p>
@@ -46,7 +46,7 @@ const Testimonial = () => {
               </div>
             </div>
           </div>
-          <div className="border border-solid-[#3A0CA3] rounded-md">
+          <div className="border border-[#3A0CA3] rounded-md">
             <p className="text-2xl mt-4 mb-8 flex items-center font-thin justify-center">
               Prices of their gadgets are very affordable
             </p>
