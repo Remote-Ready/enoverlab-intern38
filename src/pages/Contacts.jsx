@@ -22,8 +22,8 @@ export default function Contacts() {
         </div>
         <img src={pixel} alt="" />
       </div>
-      <div className="flex flex-col-reverse sm:flex-row gap-8 items-center justify-center py-10">
-        <div className="container flex">
+      <div className="flex sm:flex-col-reverse flexwrap lg:flex-nowrap gap-8 items-center justify-center py-10">
+        <div className="container flex basis-[552px]">
           <img src={station} alt="" />
           <div className="mt-8 py-12">
             <h1 className="text-[#3A0CA3] text-3xl">Our Services</h1>

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { addToCart, removeFromCart } from "../components/CartSlice";
 import "../components/css/Cart.css";
 import { BiSolidCartAdd } from "react-icons/bi";
-import { MdKeyboardArrowLeft } from "react-icons/md";
+import Recent from "../components/Recent";
 
 const Cart = ({ onClick }) => {
   const cartItems = useSelector((state) => state.cart.items);
@@ -109,6 +109,7 @@ const Cart = ({ onClick }) => {
           <small>+2348123456789</small>
         </div>
       </div>
+      <Recent />
     </div>
   );
 };
