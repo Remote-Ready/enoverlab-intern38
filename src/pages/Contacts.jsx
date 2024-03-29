@@ -2,6 +2,8 @@ import pixel from "../assets/pexels-cottonbro-studio-7438107.png";
 import { FaArrowRightLong } from "react-icons/fa6";
 import station from "../assets/workstation-space-where-a-freelancer-sit-to-work.png";
 import Testimonial from "../components/Testimonial";
+import Team from "../components/Team";
+import Vision from "../components/Vision";
 
 export default function Contacts() {
   return (
@@ -36,12 +38,10 @@ export default function Contacts() {
           </div>
         </div>
       </div>
+      <Vision />
       <Testimonial />
       <div className="container flex flex-col py-4 justify-center max-w-screen-lg mx-auto h-full">
-        <h2 className="text-2xl font-bold text-[#3A0CA3]">Get In Touch</h2>
-        <p className="py-6 text-[#8D55EF] font-sans ">
-          Feel free to drop a message below
-        </p>
+        <h2 className="text-2xl font-bold mb-4">Feel free to talk to us</h2>
         <div>
           <form
             action="https://getform.io/f/c6cd9b20-75d6-4956-a821-804fda2ae5eb"
@@ -78,6 +78,7 @@ export default function Contacts() {
             <h2 className="lg:text-2xl text-3x1 md:mb-0 mb-6 lg:leading-normal font-semibold md:w-2/5 "></h2>
           </div>
         </div>
+        <Team />
         {/* <Footer /> */}
       </div>
     </>

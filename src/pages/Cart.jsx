@@ -4,6 +4,9 @@ import { addToCart, removeFromCart } from "../components/CartSlice";
 import "../components/css/Cart.css";
 import { BiSolidCartAdd } from "react-icons/bi";
 import Recent from "../components/Recent";
+import gpay from "../assets/Bringing it all together with Google Pay.png";
+import mobile from "../assets/9Mobile Ng_ Get Free 1GB Data For Night Browsing, see how to do this.png";
+import mtn from "../assets/Call Divert_ How to Cancel Call Forwarding on MTN.png";
 
 const Cart = ({ onClick }) => {
   const cartItems = useSelector((state) => state.cart.items);
@@ -32,9 +35,9 @@ const Cart = ({ onClick }) => {
       {/* Cart ({cartItems.length}) */}
 
       <div className="cart-content">
-        <div className="cart-length">
+        <div className="cart-length bg-white">
           <h4>Cart ({cartItems.length})</h4>
-          <div>
+          <div className="bg-white">
             <BiSolidCartAdd
               size={100}
               className="text-purple-800 bg-white rounded-full m-auto "
@@ -45,7 +48,7 @@ const Cart = ({ onClick }) => {
           </div>
         </div>
 
-        <div className="summary">
+        <div className="summary bg-white">
           <p>Cart summary</p>
           <div className="subtotal">
             <p>
@@ -59,7 +62,7 @@ const Cart = ({ onClick }) => {
         </div>
       </div>
 
-      <div className="save">
+      <div className="save bg-white">
         <div className="flex">
           <p>saved items ({cartItems.length}) </p>
           <p>See All</p>
@@ -84,18 +87,23 @@ const Cart = ({ onClick }) => {
         </div>
       </div>
 
-      <div className="account">
+      <div className="account bg-white">
         <div className="col-1">
-          <p>Account Overview</p>
-          <p>Account Details</p>
-          <label htmlFor="">Address</label> <br />
-          <input type="text" name="name" placeholder="Name" /> <br /> <br />
-          <input
-            type="email"
-            name="email"
-            placeholder="Email Address"
-          /> <br /> <br />
-          <button>Send</button>
+          <p>SELECT PAYMENT METHOD</p>
+          <input type="text" name="name" placeholder="Enter card number" />{" "}
+          <br /> <br />
+          <input type="number" name="mm/yy" placeholder="mm/yyyy" /> <br />{" "}
+          <br />
+          <input type="number" placeholder="Enter cvc" className="mb-4" />
+          <button className="mb-4">Accept Payment</button>
+          <div className="mt-6">
+            <h4 className="font-light text-sm">Use different method</h4>
+            <div className="flex items-center ju">
+              <img src={gpay} alt="" />
+              <img src={mobile} alt="" />
+              <img src={mtn} alt="" />
+            </div>
+          </div>
         </div>
 
         <div className="col-2">
