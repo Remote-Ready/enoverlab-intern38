@@ -14,11 +14,11 @@ const Vision = () => {
         <h1 className="text-2xl text-[#3A0CA3] font-bold mb-5">
           Our Core Values
         </h1>
-        <div className="">
+        <div className="flex w-14 gap-4">
           <img src={point} alt="" />
           <p>integrity</p>
         </div>
-        <div className="">
+        <div className="mt-4 flex w-14 gap-4">
           <img src={point} alt="" />
           <p>Excellence</p>
         </div>

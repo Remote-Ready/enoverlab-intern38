@@ -1,4 +1,3 @@
-import { redirect } from "react-router";
 import office from "../assets/officepl.png";
 
 const Hero = () => {

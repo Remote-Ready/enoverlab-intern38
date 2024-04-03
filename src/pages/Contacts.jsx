@@ -4,6 +4,7 @@ import station from "../assets/workstation-space-where-a-freelancer-sit-to-work.
 import Testimonial from "../components/Testimonial";
 import Team from "../components/Team";
 import Vision from "../components/Vision";
+import point from "../assets/Frame 482202.png";
 
 export default function Contacts() {
   return (
@@ -24,16 +25,23 @@ export default function Contacts() {
         </div>
         <img src={pixel} alt="" />
       </div>
-      <div className="flex sm:flex-col-reverse flexwrap lg:flex-nowrap gap-8 items-center justify-center py-10">
-        <div className="container flex basis-[552px]">
+      <div className="flex sm:flex-col-reverse flex-wrap lg:flex-nowrap gap-8 items-center justify-center py-10">
+        <div className="container flex basis-[552px] justify-between">
           <img src={station} alt="" />
-          <div className="mt-8 py-12">
+          <div className="mt-8 py-12 ml-12">
             <h1 className="text-[#3A0CA3] text-3xl">Our Services</h1>
             <p className="text-[#222222] text-sm">We serve you the right way</p>
             <div className="mt-8 text-[#222222] font-light text-sm">
-              <h3 className="mb-8">We sell gadgets</h3>
-              <h3 className="mb-8">We rent out workspaces</h3>
-              <h3>24/7 customer support</h3>
+              <div className="flex gap-4">
+                <img src={point} alt="" className="h-[50%] mt-4" />
+                <h3 className="">
+                  We provide you with the state of the art workstation gadgets
+                </h3>
+              </div>
+              <div className="flex w-14 mt-4 gap-4">
+                <img src={point} alt="" className="h-[50%] mt-6" />
+                <h3>Active customer support</h3>
+              </div>
             </div>
           </div>
         </div>

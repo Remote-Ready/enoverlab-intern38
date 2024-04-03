@@ -1,237 +1,226 @@
-.cart-button{
-    width: 25%;
-    font-size: 11px;
-    margin: auto;
-    background: rgb(7, 7, 107);
-    border: 0;
-    outline: 0;
-    color: #fff;
-    padding: 10px 5px;
-    border-radius: 5px;
+.cart-button {
+  width: 25%;
+  font-size: 11px;
+  margin: auto;
+  background: rgb(7, 7, 107);
+  border: 0;
+  outline: 0;
+  color: #fff;
+  padding: 10px 5px;
+  border-radius: 5px;
+}
+
+.cart-button button {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.cart-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.cart-content .cart-length,
+.cart-content .summary {
+  flex-basis: 30%;
+}
+
+.cart-length {
+  background: gray;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.cart-length img {
+  width: 120px;
+  height: 120px;
+  margin: 15px auto;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.cart-length p {
+  margin-bottom: 10px;
+}
+
+.cart-length div {
+  text-align: center;
+}
+
+.cart-length button {
+  width: 100%;
+  margin: auto;
+  background: rgb(7, 7, 107);
+  border: 0;
+  outline: 0;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.summary {
+  background: gray;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.summary > p {
+  margin-bottom: 20px;
+}
+
+.subtotal {
+  display: flex;
+  justify-content: space-between;
+}
+
+.summary button {
+  width: 100%;
+  margin-top: 15px;
+  background: rgb(7, 7, 107);
+  border: 0;
+  outline: 0;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.save {
+  margin-top: 20px;
+  background: gray;
+  padding: 1rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.save-item {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.save-item img {
+  width: 150px;
+  height: 150px;
+  margin-top: 25px;
+}
+
+.save-item p {
+  margin-top: 5px;
+}
+
+.save-item .price {
+  margin-bottom: 15px;
+}
+
+.save-item button {
+  cursor: pointer;
+  padding: 5px;
+  border: 0;
+  outline: 0;
+  margin: 2px;
+  font-size: 12px;
+  font-weight: bold;
+  background: rgb(7, 7, 107);
+  color: #fff;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.save-item .btn {
+  margin-top: -10px;
+}
+
+.save-item button:hover {
+  background: transparent;
+  border: 1px solid purple;
+}
+
+.account {
+  padding: 1rem;
+  background: rgb(128, 128, 128, 0.6);
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.account .col-1,
+.account .col-2 {
+  flex-basis: 40%;
+}
+
+.account .col-1 p {
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+.account input {
+  border: 1.5px solid gray;
+  border-radius: 5px;
+  outline: 0;
+  padding: 5px;
+  background: transparent;
+  width: 100%;
+}
+
+.account input::placeholder {
+  color: gray;
+}
+
+.account button {
+  width: 100%;
+  margin: auto;
+  background: rgb(7, 7, 107);
+  border: 0;
+  outline: 0;
+  color: #fff;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+  .save-item {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    padding: 0.3rem 0.5rem;
   }
 
-  .cart-button button{
+  .cart-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 10px;
   }
-  
-  .cart-content{
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+
+  .carts {
+    grid-template-columns: 1fr 1fr;
   }
-  
-  .cart-content .cart-length, 
-  .cart-content .summary{
-    flex-basis: 30%;
+
+  .save-item {
+    grid-template-columns: 1fr 1fr;
   }
-  
-  .cart-length{
-    background: gray;
-    width: 100%;
-    padding: 10px;
-    margin-top: 20px;
+}
+
+@media screen and (max-width: 450px) {
+  .cart-button {
+    width: 55%;
   }
-  
-  .cart-length img{
-    width: 120px;
-    height: 120px;
-    margin: 15px auto;
-    border-radius: 50%;
-    background: #fff;
+
+  .cart-content {
+    grid-template-columns: 1fr;
+    gap: 10px;
   }
-  
-  .cart-length p{
-    margin-bottom: 10px;
+
+  .save-item {
+    grid-template-columns: 1fr;
   }
-  
-  .cart-length div{
-    text-align: center;
-  }
-  
-  .cart-length button{
-    width: 100%;
-    margin: auto;
-    background: rgb(7, 7, 107);
-    border: 0;
-    outline: 0;
-    color: #fff;
-    padding: 5px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .summary{
-    background: gray;
-    width: 100%;
-    padding: 10px;
-    margin-top: 20px;
-  }
-  
-  .summary > p{
-    margin-bottom: 20px;
-  }
-  
-  .subtotal{
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .summary button{
-    width: 100%;
-    margin-top: 15px;
-    background: rgb(7, 7, 107);
-    border: 0;
-    outline: 0;
-    color: #fff;
-    padding: 5px;
-    border-radius: 5px;
-  }
-  
-  .save{
-    margin-top: 20px;
-    background: gray;
-    padding: 1rem;
-  }
-  
-  .flex{
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .save-item{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-  }
-  
-  .save-item img{
-    width: 150px;
-    height: 150px;
-    margin-top: 25px;
-  }
-  
-  .save-item p{
-    margin-top: 5px;
-  }
-  
-  .save-item .price{
-    margin-bottom: 15px;
-  }
-  
-  .save-item button{
-    cursor: pointer;
-    padding: 5px;
-    border: 0;
-    outline: 0;
-    margin: 2px;
-    font-size: 12px;
-    font-weight: bold;
-    background: rgb(7, 7, 107);
-    color: #fff;
-    border-radius: 10px;
-    transition: .2s;
-  }
-  
-  .save-item .btn{
-    margin-top: -10px;
-  }
-  
-  .save-item button:hover{
-    background: transparent;
-    border: 1px solid purple;
-    color: #000;
-  }
-  
-  .account{
-    padding: 1rem;
-    background: rgb(128, 128, 128, .6);
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .account .col-1, 
-  .account .col-2{
-    flex-basis: 40%;
-  }
-  
-  .account .col-1 p{
-    margin: 10px 0;
-    font-weight: 600;
-  }
-  
-  .account input{
-    border: 1.5px solid purple;
-    border-radius: 5px;
-    outline: 0;
-    padding: 5px;
-    background: transparent;
-    width: 100%;
-  }
-  
-  .account input::placeholder{
-    color: gray;
-  }
-  
-  .account .col-2 p{
-    margin: 10px 0;
-  }
-  
-  .account .col-2{
-    text-align: left;
-    font-weight: 600;
-  }
-  
-  .account button{
-    width: 100%;
-    margin: auto;
-    background: rgb(7, 7, 107);
-    border: 0;
-    outline: 0;
-    color: #fff;
-    padding: 5px;
-    border-radius: 30px;
-    cursor: pointer;
-  }
-  
-  @media screen and (max-width: 900px) {
-    .save-item{
-      grid-template-columns: 1fr 1fr 1fr;
-    }
-  }
-  
-  
-  @media screen and (max-width: 600px) {
-    body{
-      padding: .3rem .5rem;
-    }
-  
-    .cart-content{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px;
-    }
-  
-    .carts{
-      grid-template-columns: 1fr 1fr;
-    }
-  
-    .save-item{
-      grid-template-columns: 1fr 1fr;
-    }
-  }
-  
-  @media screen and (max-width: 450px) {
-    .cart-button{
-      width: 55%;
-    }
-  
-    .cart-content{
-      grid-template-columns: 1fr;
-      gap: 10px;
-    }
-  
-    .save-item{
-      grid-template-columns: 1fr;
-    }
 }
