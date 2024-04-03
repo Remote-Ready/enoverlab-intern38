@@ -5,8 +5,8 @@ import "../components/css/Cart.css";
 import { BiSolidCartAdd } from "react-icons/bi";
 import Recent from "../components/Recent";
 import gpay from "../assets/Bringing it all together with Google Pay.png";
-import mobile from "../assets/9Mobile Ng_ Get Free 1GB Data For Night Browsing, see how to do this.png";
-import mtn from "../assets/Call Divert_ How to Cancel Call Forwarding on MTN.png";
+import visa from "../assets/pngwing.png";
+import master from "../assets/pngwing (1).png";
 
 const Cart = ({ onClick }) => {
   const cartItems = useSelector((state) => state.cart.items);
@@ -95,26 +95,52 @@ const Cart = ({ onClick }) => {
           <input type="number" name="mm/yy" placeholder="mm/yyyy" /> <br />{" "}
           <br />
           <input type="number" placeholder="Enter cvc" className="mb-4" />
-          <button className="mb-4">Accept Payment</button>
+          <button className="mb-4 text-sm">PLACE ORDER</button>
           <div className="mt-6">
-            <h4 className="font-light text-sm">Use different method</h4>
-            <div className="flex items-center ju">
+            <h4 className="font-light text-sm">
+              We accept bank transfer , USSD, , Debit , Credit Card
+            </h4>
+            <div className="flex items-center w-14">
               <img src={gpay} alt="" />
-              <img src={mobile} alt="" />
-              <img src={mtn} alt="" />
+              <img src={visa} alt="" />
+              <img src={master} alt="" />
             </div>
           </div>
         </div>
 
-        <div className="col-2">
-          <p>Address Book</p>
-          <small>Your Default Shipping Address</small>
-          <br /> <br />
-          <small>Olatunji Badmus</small>
-          <br /> <br />
-          <small>15 Kirikiri Road, Mushin, Lagos.</small>
-          <br /> <br />
-          <small>+2348123456789</small>
+        <div className="col-2 p-5 ">
+          <h3 className="text-sm text-gray-700">Billing Details</h3>
+          <input
+            type="text"
+            placeholder="Enter E-mail address"
+            className="font-thin mb-4 mt-2"
+          />
+          <input
+            type="text"
+            placeholder="Enter Full Name"
+            className="font-light mb-4"
+          />
+          <input
+            type="number"
+            placeholder="Enter Phone number"
+            className="font-light mb-4"
+          />
+          <input
+            type="text"
+            placeholder="country e.g Nigeria"
+            className="font-light mb-4"
+          />
+          <input
+            type="text"
+            placeholder="State province e.g lagos"
+            className="font-light mb-4"
+          />
+          <input
+            type="text"
+            placeholder="street address"
+            className="font-light mb-4"
+          />
+          <button className="font-light text-sm ">SAVE ADDRESS</button>
         </div>
       </div>
       <Recent />

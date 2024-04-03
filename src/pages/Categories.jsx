@@ -1,11 +1,14 @@
 import { useState } from "react";
 import { addToCart, removeFromCart } from "../components/CartSlice";
-
 import { useDispatch, useSelector } from "react-redux";
 import { items } from "../components/Data";
-// import { Link } from 'react-router-dom'
-
+import WorkStation from "../components/WorkStation";
 import "../components/css/Categories.css";
+import Tables from "../components/Tables";
+import Accessories from "../components/Accessories";
+import Arrivals from "../components/Arrivals";
+import Soon from "../components/Soon";
+import Discount from "../components/Discount";
 
 function Categories() {
   // const cartItems = useSelector((state) => state.cart.items);
@@ -64,17 +67,16 @@ function Categories() {
          {cartItems.length}
         </sup> 
       </Link> */}
-
         <div className="cat-header">
-          <div className="cat-col-1">
-            <h5>Browse Category</h5>
-            <p>Tables</p>
-            <p>Workstation</p>
-            <p>PC</p>
-            <p>Laptop</p>
-            <p>Accessories</p>
-            <p>Surveilance & Security</p>
-            <p>Audio And Video</p>
+          <div className="cat-col-1 p-4  bg-[#D9D9D9] w-[209px] h-[332px] rounded-lg">
+            <h5 className="text-xl font-bold mt-6">Browse Category</h5>
+            <p className="text-sm font-light mb-2">Tables</p>
+            <p className="text-sm font-light mb-2">Workstation</p>
+            <p className="text-sm font-light mb-2">PC</p>
+            <p className="text-sm font-light mb-2">Laptop</p>
+            <p className="text-sm font-light mb-2">Accessories</p>
+            <p className="text-sm font-light mb-2">Surveilance & Security</p>
+            <p className="text-sm font-light mb-2">Audio And Video</p>
           </div>
 
           <div className="cat-col-2">
@@ -82,7 +84,6 @@ function Categories() {
             <button>Shop Now</button>
           </div>
         </div>
-
         <div>
           <div>
             <div className="content">
@@ -146,22 +147,30 @@ function Categories() {
               </div>
             </div>
 
-            <div className="filters">
+            {/*<div className="filters">
               {filteredItems.map((item) => (
                 <div className="filter" key={item.id}>
                   <img src={item.image} alt="img" />
                   <p>{item.name}</p>
-                  <p>#{item.price}</p>
-                  <div className="item-btn">
-                    <button onClick={() => handleAddToCart(item)}>
-                      Add to Cart
-                    </button>
-                    <button onClick={() => handleRemoveFromCart(item)}>
+              <p>#{item.price}</p>*/}
+            <div className="item-btn">
+              <button onClick={() => handleAddToCart(item)}>Add to Cart</button>
+              {/*<button onClick={() => handleRemoveFromCart(item)}>
                       Remove Item
-                    </button>
-                  </div>
-                </div>
-              ))}
+                    </button>*/}
+            </div>
+            {/*</div>*/}
+            {/*))}
+            </div>*/}
+          </div>
+          <div className="">
+            <div>
+              <WorkStation />
+              <Tables />
+              <Accessories />
+              <Arrivals />
+              <Soon />
+              <Discount />
             </div>
           </div>
 
@@ -180,13 +189,14 @@ function Categories() {
             </ul> */}
         </div>
         {/* ) : ( */}
-        {/* <div>
-            <button onClick={handleBackToCartClick} className="cart-button">
-              Back to Cart
-            </button>
-            <CartPage />
-          </div>
-        )} */}
+        {/*
+       <div>
+          <button onClick={handleBackToCartClick} className="cart-button">
+            Back to Cart
+          </button>
+          <CartPage />
+        </div>
+          )}*/}
       </div>
     </>
   );
