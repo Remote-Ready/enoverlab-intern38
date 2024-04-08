@@ -1,6 +1,6 @@
 import mo from "../assets/New design 2023 (6).png";
 import flat from "../assets/New design 2023 (7).png";
-import window from "../assets/New workstation 1 (4).png";
+import Window from "../assets/New workstation 1 (4).png";
 import Desktop from "./Desktop";
 
 const pcItems = [
@@ -20,11 +20,11 @@ const pcItems = [
     id: "3",
     name: "DELL Desktop Computer Package",
     price: 645,
-    image: window,
+    image: Window,
   },
 ];
 
-const Pc = () => {
+const PowerCon = () => {
   return (
     <div>
       <h1 className="text-white bg-[#8D55EF] w-full h-[55px] mt-5 mb-6 py-10 p-6">
@@ -39,4 +39,4 @@ const Pc = () => {
   );
 };
 
-export default Pc;
+export default PowerCon;

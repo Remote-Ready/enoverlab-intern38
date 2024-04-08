@@ -1,5 +1,5 @@
 import rating from "../assets/star.png";
-const Wood = ({ id, name, price, image }) => {
+const Rea = ({ id, name, price, image }) => {
   return (
     <div className="border-solid border p-2 border-[#8D55EF] rounded-md">
       <div>
@@ -12,4 +12,4 @@ const Wood = ({ id, name, price, image }) => {
   );
 };
 
-export default Wood;
+export default Rea;

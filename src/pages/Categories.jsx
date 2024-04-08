@@ -9,6 +9,10 @@ import Accessories from "../components/Accessories";
 import Arrivals from "../components/Arrivals";
 import Soon from "../components/Soon";
 import Discount from "../components/Discount";
+import ForYou from "../components/ForYou";
+import Selling from "../components/Selling";
+import Chairs from "../components/Chairs";
+import PowerCon from "../components/PowerCon";
 
 function Categories() {
   // const cartItems = useSelector((state) => state.cart.items);
@@ -167,10 +171,14 @@ function Categories() {
             <div>
               <WorkStation />
               <Tables />
+              <PowerCon />
+              <Chairs />
               <Accessories />
               <Arrivals />
               <Soon />
               <Discount />
+              <ForYou />
+              <Selling />
             </div>
           </div>
 
