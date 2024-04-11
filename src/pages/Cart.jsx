@@ -7,14 +7,16 @@ import Recent from "../components/Recent";
 import gpay from "../assets/Bringing it all together with Google Pay.png";
 import visa from "../assets/pngwing.png";
 import master from "../assets/pngwing (1).png";
+import { productIdMap } from "../constants";
+import { useMemo } from "react";
 
 const Cart = ({ onClick }) => {
   const cartItems = useSelector((state) => state.cart.items);
 
   const dispatch = useDispatch();
-  const calculateSubtotal = () => {
-    return cartItems.reduce((total, item) => total + item.price, 0);
-  };
+  const subTotal = useMemo(() => {
+    return cartItems.reduce((total, id) => total + productIdMap[id].price, 0);
+  }, [cartItems]);
 
   const handleAddToCart = (item) => {
     dispatch(addToCart(item));
@@ -55,7 +57,7 @@ const Cart = ({ onClick }) => {
               <b>Subtotal </b>
             </p>
             <p>
-              <b>#{calculateSubtotal()}.00</b>
+              <b>#{subTotal}.00</b>
             </p>
           </div>
           <button>Pay Now</button>
@@ -69,25 +71,28 @@ const Cart = ({ onClick }) => {
         </div>
 
         <div className="save-item">
-          {cartItems.map((item) => (
-            <div key={item.id}>
-              <img src={item.image} alt="" />
-              <p>{item.name}</p>
-              <p className="price">#{item.price}</p>
-              <div className="btn">
-                <button onClick={() => handleAddToCart(item)}>
-                  Add to Cart
-                </button>
-                <button onClick={() => handleRemoveFromCart(item)}>
-                  Remove item
-                </button>
+          {cartItems.map((id) => {
+            const item = productIdMap[id];
+            return (
+              <div key={item.id}>
+                <img src={item.image} alt="" />
+                <p>{item.name}</p>
+                <p className="price">#{item.price}</p>
+                <div className="btn">
+                  <button onClick={() => handleAddToCart(item)}>
+                    Add to Cart
+                  </button>
+                  <button onClick={() => handleRemoveFromCart(item)}>
+                    Remove item
+                  </button>
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
 
-      <div className="account bg-white">
+      <div className="account bg-white flex flex-wrap">
         <div className="col-1">
           <p>SELECT PAYMENT METHOD</p>
           <input type="text" name="name" placeholder="Enter card number" />{" "}

@@ -1,24 +1,9 @@
 import { useState } from "react";
-import { addToCart, removeFromCart } from "../components/CartSlice";
-import { useDispatch, useSelector } from "react-redux";
-import { items } from "../components/Data";
-import WorkStation from "../components/WorkStation";
+import CategoryTemp from "../components/CategoryTemp";
 import "../components/css/Categories.css";
-import Tables from "../components/Tables";
-import Accessories from "../components/Accessories";
-import Arrivals from "../components/Arrivals";
-import Soon from "../components/Soon";
-import Discount from "../components/Discount";
-import ForYou from "../components/ForYou";
-import Selling from "../components/Selling";
-import Chairs from "../components/Chairs";
-import PowerCon from "../components/PowerCon";
+import { productsCategoryMap } from "../constants";
 
 function Categories() {
-  // const cartItems = useSelector((state) => state.cart.items);
-
-  const dispatch = useDispatch();
-
   // State variables for filters
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedColor, setSelectedColor] = useState("");
@@ -26,51 +11,9 @@ function Categories() {
   const [selectedCategory, setSelectedCategory] = useState("");
   const [quality, setQuality] = useState("");
 
-  // Filtered items based on filter values
-  const filteredItems = items.filter((item) => {
-    // Filter by search term
-    if (
-      searchTerm &&
-      !item.name.toLowerCase().includes(searchTerm.toLowerCase())
-    ) {
-      return false;
-    }
-    // Filter by color
-    if (selectedColor && item.color !== selectedColor) {
-      return false;
-    }
-    // Filter by vendor
-    if (vendor && item.vendor !== vendor) {
-      return false;
-    }
-    // Filter by category
-    if (selectedCategory && item.category !== selectedCategory) {
-      return false;
-    }
-    // Filter by quality
-    if (quality && item.quality !== quality) {
-      return false;
-    }
-    return true;
-  });
-
-  const handleAddToCart = (item) => {
-    dispatch(addToCart(item));
-  };
-
-  const handleRemoveFromCart = (item) => {
-    dispatch(removeFromCart(item));
-  };
-
   return (
     <>
       <div className="Categories">
-        {/* <Link to='/cart'>
-        Cart {" "}
-        <sup>
-         {cartItems.length}
-        </sup> 
-      </Link> */}
         <div className="cat-header">
           <div className="cat-col-1 p-4  bg-[#D9D9D9] w-[209px] h-[332px] rounded-lg">
             <h5 className="text-xl font-bold mt-6">Browse Category</h5>
@@ -157,28 +100,15 @@ function Categories() {
                   <img src={item.image} alt="img" />
                   <p>{item.name}</p>
               <p>#{item.price}</p>*/}
-            <div className="item-btn">
-              <button onClick={() => handleAddToCart(item)}>Add to Cart</button>
-              {/*<button onClick={() => handleRemoveFromCart(item)}>
-                      Remove Item
-                    </button>*/}
-            </div>
             {/*</div>*/}
             {/*))}
             </div>*/}
           </div>
           <div className="">
             <div>
-              <WorkStation />
-              <Tables />
-              <PowerCon />
-              <Chairs />
-              <Accessories />
-              <Arrivals />
-              <Soon />
-              <Discount />
-              <ForYou />
-              <Selling />
+              {Object.entries(productsCategoryMap).map(([name, products]) => (
+                <CategoryTemp key={name} name={name} products={products} />
+              ))}
             </div>
           </div>
 

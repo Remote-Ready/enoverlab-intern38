@@ -6,7 +6,7 @@ import Contacts from "./pages/Contacts";
 import Resources from "./pages/Resources";
 import CartContextProvider from "./contexts/CartProvider";
 
-import './App.css'
+import "./App.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
@@ -14,7 +14,7 @@ const App = () => {
   return (
     <CartContextProvider>
       <BrowserRouter>
-      <Header/>
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/categories" element={<Categories />} />

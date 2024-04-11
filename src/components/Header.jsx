@@ -1,9 +1,7 @@
-import { useContext, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { BiSolidCartAdd } from 'react-icons/bi'
-import { CartContext } from "../contexts/CartProvider";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
+import { useState } from "react";
 
 const links = [
   {
@@ -31,9 +29,9 @@ const links = [
 const Header = () => {
   const cartItems = useSelector((state) => state.cart.items);
   const [navbar, setNavBar] = useState(false);
-  const { cart } = useContext(CartContext);
-  const numberInCart = cart.length;
-  const close = () => setNavBar(false)
+  // const { cart } = useContext(CartContext);
+  const numberInCart = cartItems.length;
+  const close = () => setNavBar(false);
 
   return (
     <div className="container flex gap-4 justify-between items-center h-20 sticky top-0 bg-white">
@@ -42,10 +40,7 @@ const Header = () => {
       </h2>
 
       {/* Added a cart display bewteen the logo and menu icon  */}
-      <Link to="/cart" className="flex text-2xl">
-      <BiSolidCartAdd /> 
-      <sup>{cartItems.length}</sup>
-      </Link>
+      <Link to="/cart" className="flex text-2xl"></Link>
 
       <ul className="hidden md:flex ml-auto">
         {links.map(({ id, title, to }) => (
@@ -74,11 +69,15 @@ const Header = () => {
           {" "}
           {links.map(({ id, title, to }) => (
             <li key={id} className="cursor-pointer py-6 text-xl font-medium">
-              <Link to={to} onClick={close}>{title}</Link>
+              <Link to={to} onClick={close}>
+                {title}
+              </Link>
             </li>
           ))}
           <li className="px-4 cursor-pointer py-6 font-medium relative">
-            <Link to="/cart" onClick={close}>Cart</Link>
+            <Link to="/cart" onClick={close}>
+              Cart
+            </Link>
 
             {numberInCart > 0 && (
               <span className="bg-red-600 text-white w-5 h-5 rounded-full grid place-content-center text-xs absolute top-4 right-0">
