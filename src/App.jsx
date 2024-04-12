@@ -20,8 +20,8 @@ const App = () => {
           <Route path="/categories" element={<Categories />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/congrat" element={<Congrat />} />
         </Routes>
-        <Congrat />
       </BrowserRouter>
     </CartContextProvider>
   );
