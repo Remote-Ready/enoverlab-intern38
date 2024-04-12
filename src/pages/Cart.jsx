@@ -9,6 +9,8 @@ import visa from "../assets/pngwing.png";
 import master from "../assets/pngwing (1).png";
 import { productIdMap } from "../constants";
 import { useMemo } from "react";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 const Cart = ({ onClick }) => {
   const cartItems = useSelector((state) => state.cart.items);
@@ -28,6 +30,7 @@ const Cart = ({ onClick }) => {
 
   return (
     <div>
+      <Header />
       <Link to="/categories">
         <button onClick={onClick} className="cart-button">
           &lt; continue shopping
@@ -92,7 +95,7 @@ const Cart = ({ onClick }) => {
         </div>
       </div>
 
-      <div className="account bg-white flex flex-wrap">
+      <div className="account bg-white flex-col-reverse lg:flex-row gap-8">
         <div className="col-1">
           <p>SELECT PAYMENT METHOD</p>
           <input type="text" name="name" placeholder="Enter card number" />{" "}
@@ -103,7 +106,7 @@ const Cart = ({ onClick }) => {
           <button className="mb-4 text-sm">PLACE ORDER</button>
           <div className="mt-6">
             <h4 className="font-light text-sm">
-              We accept bank transfer , USSD, , Debit , Credit Card
+              We accept bank transfer , USSD, Debit , Credit Card
             </h4>
             <div className="flex items-center w-14">
               <img src={gpay} alt="" />
@@ -115,40 +118,48 @@ const Cart = ({ onClick }) => {
 
         <div className="col-2 p-5 ">
           <h3 className="text-sm text-gray-700">Billing Details</h3>
-          <input
-            type="text"
-            placeholder="Enter E-mail address"
-            className="font-thin mb-4 mt-2"
-          />
-          <input
-            type="text"
-            placeholder="Enter Full Name"
-            className="font-light mb-4"
-          />
-          <input
-            type="number"
-            placeholder="Enter Phone number"
-            className="font-light mb-4"
-          />
-          <input
-            type="text"
-            placeholder="country e.g Nigeria"
-            className="font-light mb-4"
-          />
-          <input
-            type="text"
-            placeholder="State province e.g lagos"
-            className="font-light mb-4"
-          />
-          <input
-            type="text"
-            placeholder="street address"
-            className="font-light mb-4"
-          />
-          <button className="font-light text-sm ">SAVE ADDRESS</button>
+          <form action="">
+            <input
+              type="text"
+              placeholder="Enter E-mail address"
+              className="font-thin mb-4 mt-2"
+            />
+            <input
+              type="text"
+              placeholder="Enter Full Name"
+              className="font-light mb-4"
+            />
+            <input
+              type="number"
+              placeholder="Enter Phone number"
+              className="font-light mb-4"
+            />
+            <input
+              type="text"
+              placeholder="Enter Country e.g Nigeria"
+              className="font-light mb-4"
+            />
+            <input
+              type="text"
+              placeholder="State province e.g lagos"
+              className="font-light mb-4"
+            />
+            <input
+              type="text"
+              placeholder="street address"
+              className="font-light mb-4"
+            />
+            <Link
+              to="/congrat"
+              className="font-light text-sm bg-[#3A0CA3] text-white py-4 rounded-lg px-6"
+            >
+              SAVE ADDRESS
+            </Link>
+          </form>
         </div>
       </div>
       <Recent />
+      <Footer />
     </div>
   );
 };

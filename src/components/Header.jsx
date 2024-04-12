@@ -11,18 +11,18 @@ const links = [
   },
   {
     id: 2,
+    title: "About Us",
+    to: "/About",
+  },
+  {
+    id: 3,
     title: "Categories",
     to: "/Categories",
   },
   {
-    id: 3,
+    id: 4,
     title: "Resources",
     to: "/Resources",
-  },
-  {
-    id: 4,
-    title: "Contact Us",
-    to: "/Contacts",
   },
 ];
 

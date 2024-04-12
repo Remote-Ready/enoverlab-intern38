@@ -5,11 +5,13 @@ import Testimonial from "../components/Testimonial";
 import Team from "../components/Team";
 import Vision from "../components/Vision";
 import point from "../assets/Frame 482202.png";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 export default function Contacts() {
   return (
     <>
-      {/* <Header /> */}
+      <Header />
       <div className="container flex flex-wrap lg:flex-nowrap gap-8 items-center justify-center py-10">
         <div className="basis-[552px] flex-grow">
           <h2 className="text-3xl text-[#3A0CA3]">About Us</h2>
@@ -25,26 +27,25 @@ export default function Contacts() {
         </div>
         <img src={pixel} alt="" />
       </div>
-      <div className="flex sm:flex-col-reverse flex-wrap lg:flex-nowrap gap-8 items-center justify-center py-10">
-        <div className="container flex basis-[552px] justify-between">
-          <img src={station} alt="" />
-          <div className="mt-8 py-12 ml-12">
-            <h1 className="text-[#3A0CA3] text-3xl">Our Services</h1>
-            <p className="text-[#222222] text-sm">We serve you the right way</p>
-            <div className="mt-8 text-[#222222] font-light text-sm">
-              <div className="flex gap-4">
-                <img src={point} alt="" className="h-[50%] mt-4" />
-                <h3 className="">
-                  We provide you with the state of the art workstation gadgets
-                </h3>
-              </div>
-              <div className="flex w-14 mt-4 gap-4">
-                <img src={point} alt="" className="h-[50%] mt-6" />
-                <h3>Active customer support</h3>
-              </div>
+      <div className="container flex flex-col-reverse lg:flex-row gap-8 items-center justify-center py-10">
+        <img src={station} alt="" />
+        <div className="lg:basis-[552px] flex-grow">
+          <h1 className="text-[#3A0CA3] text-3xl">Our Services</h1>
+          <p className="text-[#222222] text-sm">We serve you the right way</p>
+          <div className="mt-8 text-[#222222] font-light text-sm">
+            <div className="flex gap-4">
+              <img src={point} alt="" className="h-[50%] mt-4" />
+              <h3 className="">
+                We provide you with the state of the art workstation gadgets
+              </h3>
+            </div>
+            <div className="flex w-14 mt-4 gap-4">
+              <img src={point} alt="" className="h-[50%] mt-6" />
+              <h3>Active customer support</h3>
             </div>
           </div>
         </div>
+        {/* <div className="container flex basis-[552px] justify-between"></div> */}
       </div>
       <Vision />
       <Testimonial />
@@ -87,7 +88,7 @@ export default function Contacts() {
           </div>
         </div>
         <Team />
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </>
   );
