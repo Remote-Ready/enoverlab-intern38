@@ -35,10 +35,10 @@ const Item = ({ id, name, price, image }) => {
         </button>
       ) : (
         <button
-          className="w-full rounded-md bg-[#3A0CA3] items-center text-white py-2"
+          className="w-full rounded-md bg-[#3A0CA3] items-center text-white text-sm font-light py-2"
           onClick={() => handleAddToCart(id)}
         >
-          Add to Cart
+          ADD TO CART
         </button>
       )}
     </div>

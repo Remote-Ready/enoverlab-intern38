@@ -10,7 +10,7 @@ const Testimonial = () => {
           work environment comfortable{" "}
         </p>
       </div>
-      <div className="bg-[#D9D9D9] flex flex-col  items-center mt-8 rounded-2xl w-1/4 m-auto py-12 px-8 ">
+      <div className="bg-[#D9D9D9] flex flex-col items-center mt-8 rounded-2xl max-w-xs m-auto py-12 px-8 ">
         <img src={anita} alt="" className="h-[208px] w-[188px]" />
         <h1 className="text-[#A0A0A0] text-2xl mt-4">Anita Collins</h1>
         <p className="text-2xl">

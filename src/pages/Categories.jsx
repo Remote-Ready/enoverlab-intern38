@@ -2,6 +2,8 @@ import { useState } from "react";
 import CategoryTemp from "../components/CategoryTemp";
 import "../components/css/Categories.css";
 import { productsCategoryMap } from "../constants";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 function Categories() {
   // State variables for filters
@@ -13,6 +15,7 @@ function Categories() {
 
   return (
     <>
+      <Header />
       <div className="Categories">
         <div className="cat-header">
           <div className="cat-col-1 p-4  bg-[#D9D9D9] w-[209px] h-[332px] rounded-lg">
@@ -136,6 +139,7 @@ function Categories() {
         </div>
           )}*/}
       </div>
+      <Footer />
     </>
   );
 }

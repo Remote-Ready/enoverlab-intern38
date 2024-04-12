@@ -5,18 +5,20 @@ import NewProducts from "../components/NewProducts";
 //import Footer from "../components/Footer";
 import TopSellingItems from "../components/TopSellingItems";
 import Vid from "../components/Vid";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
     <div>
-      {/* <Header /> */}
+      <Header />
       <div className="">
         <Hero />
         <Vid />
         <TopSellingItems className="mt-20" />
         <ProductCategories />
         <NewProducts />
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </div>
   );
