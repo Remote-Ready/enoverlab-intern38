@@ -9,7 +9,7 @@ const Product = ({ id, name, price, image }) => {
       <div>
         <img src={image} alt="" />
         <h4 className="text-[#232323] font-thin">{name}</h4>
-        <h6 className="text-[#232323] font-bold">{price},000</h6>
+        <h6 className="text-[#232323] font-bold">₦{price},000</h6>
         <button
           onClick={() => addToCart(id)}
           className="bg-[#3A0CA3] text-white font-light py-1 px-10 rounded-md w-full hover:scale-95 duration-200"
