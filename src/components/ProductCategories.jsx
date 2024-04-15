@@ -19,7 +19,7 @@ const productCategoriesItems = [
   },
   {
     id: "3",
-    name: "Chairs",
+    name: "Minimalist Workspace",
     image: Chair$desk,
   },
   {

@@ -6,21 +6,21 @@ import comfy from "../assets/comfy.png";
 const bestSellingItems = [
   {
     id: "1",
-    name: "Exquisite Work Chair",
-    price: 30000,
+    name: "Executive Work Chair",
+    price: 150,
     image: comfy,
   },
 
   {
     id: "2",
-    name: "Apple Gadget",
-    price: 16000000,
+    name: "m1 Macbook pro",
+    price: 160,
     image: laptop,
   },
   {
     id: "3",
-    name: "Work Table",
-    price: 150000,
+    name: "Phone Stand",
+    price: 7,
     image: stand,
   },
 ];

@@ -1,18 +1,18 @@
-import Headset from "../assets/headset.jpg";
-import Phone from "../assets/mobile.jpg";
+import monitor from "../assets/nec curve.png";
+import home from "../assets/home desk.png";
 import Chair$desk from "../assets/chair$desk.jpg";
 import ProductCategory from "./ProductCategory";
 
 const newProductsItems = [
   {
     id: "1",
-    name: "Headsets",
-    image: Headset,
+    name: "Monitor",
+    image: monitor,
   },
   {
     id: "2",
-    name: "Mobile Devices",
-    image: Phone,
+    name: "Home Desk",
+    image: home,
   },
   {
     id: "3",
