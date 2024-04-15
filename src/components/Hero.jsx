@@ -11,8 +11,8 @@ const Hero = () => {
         </h2>
         <p className="mb-4 mt-4 font-light text-[#53535B]">
           Revitalize your workspace with Remote Ready - where innovation meets
-          functionality . Browse our collection today and transform he way you.
-          work
+          functionality. Browse our collection today and transform the way you
+          work.
         </p>
         <a href="/Categories">
           <button className="bg-[#3A0CA3] text-white font-light py-2 px-8 rounded-md">

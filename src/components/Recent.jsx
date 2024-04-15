@@ -6,7 +6,7 @@ import Viewed from "./Viewed";
 const recentlyViewItems = [
   {
     id: "1",
-    name: "Customize Office Workspace",
+    name: "Customized Office Workspace",
     price: 200,
     image: design,
   },
