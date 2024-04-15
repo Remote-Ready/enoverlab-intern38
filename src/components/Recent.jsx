@@ -7,19 +7,19 @@ const recentlyViewItems = [
   {
     id: "1",
     name: "Customize Office Workspace",
-    price: 40.0,
+    price: 200,
     image: design,
   },
   {
     id: "2",
     name: "Wireless Gaming Keyboard And Mouse",
-    price: 999.0,
+    price: 9000,
     image: mouse,
   },
   {
     id: "3",
     name: "Adjustable Chair",
-    price: 450.0,
+    price: 45,
     image: adjustable,
   },
 ];
