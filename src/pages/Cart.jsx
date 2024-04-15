@@ -60,7 +60,7 @@ const Cart = ({ onClick }) => {
               <b>Subtotal </b>
             </p>
             <p>
-              <b>#{subTotal}.00</b>
+              <b>₦{subTotal},000</b>
             </p>
           </div>
           <button>Pay Now</button>
@@ -80,7 +80,7 @@ const Cart = ({ onClick }) => {
               <div key={item.id}>
                 <img src={item.image} alt="" />
                 <p>{item.name}</p>
-                <p className="price">#{item.price}</p>
+                <p className="price">₦{item.price},000</p>
                 <div className="btn">
                   <button onClick={() => handleAddToCart(item)}>
                     Add to Cart

@@ -22,7 +22,7 @@ const Item = ({ id, name, price, image }) => {
           alt=""
         />
         <h4 className="text-[#232323] font-thin">{name}</h4>
-        <h6 className="text-[#232323] font-bold">#{price},000</h6>
+        <h6 className="text-[#232323] font-bold">₦{price},000</h6>
         <img src={rating} alt="" />
       </div>
       {/* TODO: check that item is not already in cart */}
