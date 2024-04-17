@@ -1,7 +1,7 @@
 import felix from "../assets/Group 6.png";
 import rebecca from "../assets/Group 2.png";
 import faith from "../assets/Group 3.png";
-import chinelo from "../assets/Group 4.png";
+import teni from "../assets/teni.jpeg";
 import tolu from "../assets/Group 5.png";
 import bolaji from "../assets/Mask group (1).png";
 
@@ -12,7 +12,7 @@ const Team = () => {
         <h1 className="text-xl font-semibold text-[#3A0CA3] text-center justify-center mb-8">
           Meet The Team
         </h1>
-        <div className="grid md:grid-cols-3 gap-4 items-center justify-center">
+        <div className="grid md:grid-cols-3 aspect-[3/2] object-cover object-top w-full gap-4 items-center justify-center">
           <div>
             <img src={felix} alt="" />
             <div className="text-[#7C7C7C] text-center">
@@ -35,10 +35,10 @@ const Team = () => {
             </div>
           </div>
           <div>
-            <img src={chinelo} alt="" />
+            <img src={teni} alt="" />
             <div className="text-[#7C7C7C] text-center">
-              <h2 className="text-lg">Chinelo</h2>
-              <p>Product Manager</p>
+              <h2 className="text-lg">Teni</h2>
+              <p>Product Designer</p>
             </div>
           </div>
           <div>
