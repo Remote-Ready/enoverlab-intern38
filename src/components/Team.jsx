@@ -1,7 +1,7 @@
 import felix from "../assets/Group 6.png";
 import rebecca from "../assets/Group 2.png";
 import faith from "../assets/Group 3.png";
-import teni from "../assets/teni.jpeg";
+import teni from "../assets/ten.jpeg";
 import tolu from "../assets/Group 5.png";
 import bolaji from "../assets/Mask group (1).png";
 
@@ -38,7 +38,7 @@ const Team = () => {
             <img src={teni} alt="" />
             <div className="text-[#7C7C7C] text-center">
               <h2 className="text-lg">Teni</h2>
-              <p>Product Designer</p>
+              <p>UI/UX Designer</p>
             </div>
           </div>
           <div>
