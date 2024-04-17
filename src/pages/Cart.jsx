@@ -98,8 +98,7 @@ const Cart = ({ onClick }) => {
       <div className="account bg-white flex-col-reverse lg:flex-row gap-8">
         <div className="col-1">
           <p>SELECT PAYMENT METHOD</p>
-          <input type="text" name="name" placeholder="Enter card number" />{" "}
-          <br /> <br />
+          <input type="number" placeholder="Enter card number" /> <br /> <br />
           <input type="number" name="mm/yy" placeholder="mm/yyyy" /> <br />{" "}
           <br />
           <input type="number" placeholder="Enter cvc" className="mb-4" />
