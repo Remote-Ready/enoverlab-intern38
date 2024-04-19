@@ -1,8 +1,8 @@
-import felix from "../assets/Group 6.png";
-import rebecca from "../assets/Group 2.png";
-import faith from "../assets/Group 3.png";
-import teni from "../assets/ten.jpeg";
-import tolu from "../assets/Group 5.png";
+import felix from "../assets/Group.png";
+import rebecca from "../assets/Mask group (3).png";
+import faith from "../assets/rebecca 1 (1).png";
+import teni from "../assets/rebecca 1.png";
+import tolu from "../assets/rebecca 1 (2).png";
 import bolaji from "../assets/Mask group (1).png";
 
 const Team = () => {
