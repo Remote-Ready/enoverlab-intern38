@@ -1,4 +1,4 @@
-import pixel from "../assets/pexels-cottonbro-studio-7438107.png";
+import pixel from "../assets/about pic.png";
 import { FaArrowRightLong } from "react-icons/fa6";
 import station from "../assets/workstation-space-where-a-freelancer-sit-to-work.png";
 import Testimonial from "../components/Testimonial";
@@ -88,8 +88,8 @@ export default function Contacts() {
           </div>
         </div>
         <Team />
-        <Footer />
       </div>
+      <Footer />
     </>
   );
 }

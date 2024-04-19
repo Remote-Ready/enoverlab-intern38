@@ -24,7 +24,7 @@ const Team = () => {
             <img src={rebecca} alt="" />
             <div className="text-[#7C7C7C] text-center">
               <h2 className="text-lg">Rebecca</h2>
-              <p>Roduct Manager</p>
+              <p>Product Manager</p>
             </div>
           </div>
           <div>
