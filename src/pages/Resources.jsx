@@ -70,8 +70,8 @@ export default function Resources() {
         <button className="text-white bg-[#3A0CA3] px-4 py-2 rounded-sm">
           I agree with terms
         </button>
-        <Footer />
       </div>
+      <Footer />
     </>
   );
 }

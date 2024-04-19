@@ -35,7 +35,7 @@ const Header = () => {
 
   return (
     <div className="container flex gap-4 justify-between items-center h-20 sticky top-0 bg-white">
-      <h2 className="flex justify-between items-center h-20 text-blue-700 text-2xl font-bold hover:scale-105 duration-300">
+      <h2 className="flex justify-between items-center h-20 text-[#3A0CA3] text-2xl font-bold hover:scale-105 duration-300">
         RemoteReady
       </h2>
 

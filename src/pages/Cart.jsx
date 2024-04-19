@@ -116,7 +116,7 @@ const Cart = ({ onClick }) => {
         </div>
 
         <div className="col-2 p-5 ">
-          <h3 className="text-sm text-gray-700">Billing Details</h3>
+          <h3 className="text-sm text-gray-700">Delivery Details</h3>
           <form action="">
             <input
               type="text"
