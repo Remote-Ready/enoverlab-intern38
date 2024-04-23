@@ -1,4 +1,5 @@
 import office from "../assets/officepl.png";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -14,11 +15,12 @@ const Hero = () => {
           functionality. Browse our collection today and transform the way you
           work.
         </p>
-        <a href="/Categories">
-          <button className="bg-[#3A0CA3] text-white font-light py-2 px-8 rounded-md">
-            Shop Now
-          </button>
-        </a>
+        <Link
+          to="/categories"
+          className="bg-[#3A0CA3] text-white font-light py-2 px-8 rounded-md"
+        >
+          Shop Now
+        </Link>
       </div>
       <img
         src={office}
